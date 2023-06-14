@@ -1,0 +1,14 @@
+name: Good Morning
+on:
+  schedule:
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+
+jobs:
+  good_morning:
+    name: Good Morning
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print
+        run: |
+          echo G\'morning
